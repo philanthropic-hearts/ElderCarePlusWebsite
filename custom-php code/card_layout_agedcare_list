@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<!-- Creating cards for the number of services found based on the suburb selected or service name selected -->
+<div class="container">
+  
+   <?php
+	   if(isset($_POST['btnSuburb'])){
+		 echo "<h2>Aged Care Services in " . $_POST['suburb'] . " </h2> </br>";
+	   }
+	   if(isset($_POST['btnName'])){
+		 echo "<h2>Aged Care Services run by " . $_POST['service_name'] . " </h2> </br>"; 
+	   }
+   ?>
+   
+  <div class="card-columns">
+
+	<?php
+	  if(isset($_POST['btnSuburb'])){
+		 $suburb_name = $_POST['suburb'];
+		 
+		 global $wpdb;
+		  # establishing the connection with AWS RDS (MySQL) database
+		 $second_db = new wpdb(DB_USER, DB_PASSWORD, 'eldercareplus_db', DB_HOST);
+		 
+		 # query for fetching the records from databse based on suburb name.
+		 $qry = "SELECT * FROM `age_care_services` WHERE `Physical Address Suburb` = '" . $suburb_name . "'";
+		 $result = $second_db->get_results($qry);
+		 
+		 foreach ( $result as $row ){
+			echo '<div class = "card" style="-webkit-box-shadow:0px 13px 16px 3px rgba(62,66,66,0.12); -moz-box-shadow: 0px 13px 16px 3px rgba(62,66,66,0.12); box-shadow: 0px 13px 16px 3px rgba(62,66,66,0.12); border-radius:20px;">
+					<div class="card-body" style="background-color:rgba(255, 0, 0, 0.4); border-top-left-radius:20px; border-top-right-radius:20px; padding:10px">
+					  <h4 class="card-title" style="color:white">' .$row->{"Service Name"}. '</h4></div>
+					  <div style="padding: 20px"><p class="card-text">
+						 <ul>
+						   <li><b>Address:</b> '. $row->{"Address"} .'</li>
+						   <li><b>Suburb:</b> ' . $row->{"Physical Address Suburb"} . '</li>
+						   <li><b>Care Type:</b> ' . $row->{"Care Type"} . '</li>
+						   <li><b>Provider Name:</b> ' . $row->{"Provider Name"} . '</li>
+						   <li><b>Organisation Type:</b> ' . $row->{"Organisation Type"} . '</li>
+						 </ul>
+					  </p>
+				  </div> </div> ';
+		 }	 
+	  }
+	  if(isset($_POST['btnName'])){
+		 $service = $_POST['service_name'];
+		 
+		 global $wpdb;
+		 # establishing the connection with AWS RDS (MySQL) database
+		 $second_db = new wpdb(DB_USER, DB_PASSWORD, 'eldercareplus_db', DB_HOST);
+		 
+		 # query for fetching the records from databse based on service provider name.
+		 $qry = "SELECT * FROM `age_care_services` WHERE `Service Name` = '" . $service . "'";
+		 $result = $second_db->get_results($qry);
+		 
+		 foreach ( $result as $row ){
+			echo '<div class = "card" style="-webkit-box-shadow:0px 13px 16px 3px rgba(62,66,66,0.12); -moz-box-shadow: 0px 13px 16px 3px rgba(62,66,66,0.12); box-shadow: 0px 13px 16px 3px rgba(62,66,66,0.12); border-radius:20px;">
+					<div class="card-body" style="background-color:rgba(255, 0, 0, 0.4); border-top-left-radius:20px; border-top-right-radius:20px; padding:10px">
+					  <h4 class="card-title" style="color:white">' .$row->{"Service Name"}. '</h4></div>
+					  <div style="padding: 20px"><p class="card-text">
+						 <ul>
+						   <li><b>Address:</b> '. $row->{"Address"} .'</li>
+						   <li><b>Suburb:</b> ' . $row->{"Physical Address Suburb"} . '</li>
+						   <li><b>Care Type:</b> ' . $row->{"Care Type"} . '</li>
+						   <li><b>Provider Name:</b> ' . $row->{"Provider Name"} . '</li>
+						   <li><b>Organisation Type:</b> ' . $row->{"Organisation Type"} . '</li>
+						 </ul>
+					  </p>
+				  </div> </div> ';
+		 }	 
+	  }
+	 
+	?>
+  </div>
+</div>
