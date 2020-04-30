@@ -1,0 +1,523 @@
+# Copyright (C) 2018 WP Charms
+# This file is distributed under the GNU General Public License v2 or later.
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Kotre 1.0.7\n"
+"Report-Msgid-Bugs-To: https://wpcharms.com/support/item/kotre\n"
+"POT-Creation-Date: 2019-04-11 12:12+0545\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
+"Last-Translator: WP Charms <wpcharms@gmail.com>\n"
+"Language-Team: the WP Charms team <wpcharms@gmail.com>\n"
+"X-Generator: Poedit 2.1.1\n"
+"X-Poedit-KeywordsList: __;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;"
+"_nx_noop:1,2,3c;esc_attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;"
+"esc_html_x:1,2c\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ..\n"
+"X-Textdomain-Support: yes\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: comments.php:32
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:41 comments.php:62
+msgid "Comment navigation"
+msgstr ""
+
+#: comments.php:44 comments.php:65
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:45 comments.php:66
+msgid "Newer Comments"
+msgstr ""
+
+#: comments.php:79
+msgid "Comments are closed."
+msgstr ""
+
+#: functions.php:52
+msgid "Main Header Menu"
+msgstr ""
+
+#: functions.php:53
+msgid "Social Links"
+msgstr ""
+
+#: functions.php:117
+#, php-format
+msgid "Footer %d"
+msgstr ""
+
+#: includes/customizer/core.php:60
+msgid "Read More"
+msgstr ""
+
+#: includes/customizer/core.php:61
+msgid "Copyright &copy; [the-year] [the-site-title]. All rights reserved."
+msgstr ""
+
+#: includes/customizer/customizer.php:49
+msgid "Kotre Pro"
+msgstr ""
+
+#: includes/customizer/customizer.php:50
+msgid "Buy Now"
+msgstr ""
+
+#: includes/customizer/options/blog.php:11
+msgid "Blog/Archive"
+msgstr ""
+
+#: includes/customizer/options/blog.php:26
+msgid "Excerpt Length"
+msgstr ""
+
+#: includes/customizer/options/blog.php:27
+msgid "in words"
+msgstr ""
+
+#: includes/customizer/options/blog.php:44
+msgid "Read More Text"
+msgstr ""
+
+#: includes/customizer/options/footer.php:11
+msgid "Footer"
+msgstr ""
+
+#: includes/customizer/options/footer.php:26
+msgid "Copyright Text"
+msgstr ""
+
+#: includes/customizer/options/footer.php:27
+msgid "HTML tags are not allowed"
+msgstr ""
+
+#: includes/customizer/options/header.php:19
+msgid "Logo Options"
+msgstr ""
+
+#: includes/customizer/options/header.php:22
+msgid "Logo Only"
+msgstr ""
+
+#: includes/customizer/options/header.php:23
+msgid "Title Only"
+msgstr ""
+
+#: includes/customizer/options/header.php:24
+msgid "Title + Tagline"
+msgstr ""
+
+#: includes/customizer/options/header.php:32
+msgid "Main Header"
+msgstr ""
+
+#: includes/customizer/options/header.php:47
+msgid "Show Social Icons"
+msgstr ""
+
+#: includes/customizer/options/header.php:63
+msgid "Show Search Form"
+msgstr ""
+
+#: includes/customizer/options/options.php:13
+msgid "Theme Options"
+msgstr ""
+
+#: includes/demo/demo.php:17
+msgid "Default (Blog)"
+msgstr ""
+
+#: includes/demo/demo.php:26
+msgid "Gutenberg"
+msgstr ""
+
+#: includes/demo/demo.php:35
+msgid "Elementor"
+msgstr ""
+
+#: includes/demo/demo.php:44
+msgid "WooCommerce Gutenberg"
+msgstr ""
+
+#: includes/demo/demo.php:53
+msgid "WooCommerce Elementor"
+msgstr ""
+
+#: includes/helpers.php:56
+msgctxt "Raleway font: on or off"
+msgid "on"
+msgstr ""
+
+#: includes/helpers.php:61
+msgctxt "Muli font: on or off"
+msgid "on"
+msgstr ""
+
+#: includes/helpers.php:95
+msgctxt "year date format"
+msgid "Y"
+msgstr ""
+
+#: includes/hooks.php:256
+#, php-format
+msgid "%1$s by %2$s"
+msgstr ""
+
+#: includes/metabox.php:33
+msgid "Kotre Settings"
+msgstr ""
+
+#: includes/metabox.php:63
+msgid "Disable Title"
+msgstr ""
+
+#: includes/metabox.php:70
+msgid "Disable Featured Image"
+msgstr ""
+
+#: includes/metabox.php:77
+msgid "Disable Top & Bottom Space of the Content"
+msgstr ""
+
+#: includes/template-tags.php:19 includes/template-tags.php:102
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#: includes/template-tags.php:72
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#: includes/template-tags.php:114
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: includes/theme-info/about.php:9 includes/theme-info/about.php:10
+msgid "About Kotre"
+msgstr ""
+
+#: includes/theme-info/about.php:13
+#, php-format
+msgid "Welcome to %s - "
+msgstr ""
+
+#: includes/theme-info/about.php:16
+msgid ""
+"Kotre is a simple, clean and lightweight multi-purpose WordPress theme "
+"compatible with Elementor and Gutenberg."
+msgstr ""
+
+#: includes/theme-info/about.php:21
+msgid "Theme Details"
+msgstr ""
+
+#: includes/theme-info/about.php:25
+msgid "View Demo"
+msgstr ""
+
+#: includes/theme-info/about.php:29
+msgid "View Documentation"
+msgstr ""
+
+#: includes/theme-info/about.php:33
+msgid "Rate This Theme"
+msgstr ""
+
+#: includes/theme-info/about.php:37
+msgid "Upgrade To Pro Theme"
+msgstr ""
+
+#: includes/theme-info/about.php:45
+msgid "Getting Started"
+msgstr ""
+
+#: includes/theme-info/about.php:46 includes/theme-info/about.php:63
+msgid "Recommended Actions"
+msgstr ""
+
+#: includes/theme-info/about.php:47
+msgid "Demo Content"
+msgstr ""
+
+#: includes/theme-info/about.php:48
+msgid "FREE VS. PRO"
+msgstr ""
+
+#: includes/theme-info/about.php:54
+msgid "Theme Documentation"
+msgstr ""
+
+#: includes/theme-info/about.php:55
+msgid ""
+"Find step by step instructions with video documentation to setup theme easily."
+msgstr ""
+
+#: includes/theme-info/about.php:56
+msgid "View documentation"
+msgstr ""
+
+#: includes/theme-info/about.php:64
+msgid ""
+"We recommend few steps to take so that you can get complete site like shown "
+"in demo."
+msgstr ""
+
+#: includes/theme-info/about.php:65
+msgid "Check recommended actions"
+msgstr ""
+
+#: includes/theme-info/about.php:72
+msgid "Customize Everything"
+msgstr ""
+
+#: includes/theme-info/about.php:73
+msgid "Start customizing every aspect of the website with customizer."
+msgstr ""
+
+#: includes/theme-info/about.php:74
+msgid "Go to Customizer"
+msgstr ""
+
+#: includes/theme-info/about.php:82
+msgid "Pro Version"
+msgstr ""
+
+#: includes/theme-info/about.php:83
+msgid "Upgrade to pro version for additional features and options."
+msgstr ""
+
+#: includes/theme-info/about.php:84
+msgid "View Pro Version"
+msgstr ""
+
+#: includes/theme-info/about.php:92 includes/theme-info/about.php:94
+msgid "Contact Support"
+msgstr ""
+
+#: includes/theme-info/about.php:93
+msgid ""
+"If you have any problem, feel free to create ticket and our dedicated Support "
+"team will help you to fix it."
+msgstr ""
+
+#: includes/theme-info/about.php:102 includes/theme-info/about.php:104
+msgid "Customization Request"
+msgstr ""
+
+#: includes/theme-info/about.php:103
+msgid ""
+"We have dedicated team members for theme customization. Feel free to contact "
+"us any time if you need any customization service."
+msgstr ""
+
+#: includes/theme-info/about.php:116 includes/theme-info/about.php:127
+msgid "One Click Demo Import"
+msgstr ""
+
+#: includes/theme-info/about.php:117
+msgid ""
+"Please install the One Click Demo Import plugin to import the demo content. "
+"After activation go to Appearance >> Import Demo Data and import it."
+msgstr ""
+
+#: includes/theme-info/about.php:127
+#, php-format
+msgid ""
+"Install %1$s plugin to import demo content. Demo data are bundled within the "
+"theme, Please make sure plugin is installed and activated. After plugin "
+"activation, go to Import Demo Data menu under Appearance and import it."
+msgstr ""
+
+#: includes/theme-info/about.php:134
+msgid "Gutenberg & Elementor Compatible"
+msgstr ""
+
+#: includes/theme-info/about.php:135
+msgid "Theme supports/works perfectly with Gutenberg and Elementor"
+msgstr ""
+
+#: includes/theme-info/about.php:136 includes/theme-info/about.php:137
+#: includes/theme-info/about.php:144 includes/theme-info/about.php:158
+#: includes/theme-info/about.php:172 includes/theme-info/about.php:179
+#: includes/theme-info/about.php:185
+msgid "yes"
+msgstr ""
+
+#: includes/theme-info/about.php:141
+msgid "Sticky Header"
+msgstr ""
+
+#: includes/theme-info/about.php:142
+msgid "Option to make header sticky at top"
+msgstr ""
+
+#: includes/theme-info/about.php:143 includes/theme-info/about.php:157
+#: includes/theme-info/about.php:171 includes/theme-info/about.php:178
+msgid "no"
+msgstr ""
+
+#: includes/theme-info/about.php:148
+msgid "Font Options"
+msgstr ""
+
+#: includes/theme-info/about.php:149
+msgid "Google fonts options for changing the overall site fonts"
+msgstr ""
+
+#: includes/theme-info/about.php:151
+msgid "100+"
+msgstr ""
+
+#: includes/theme-info/about.php:155
+msgid "Color Options"
+msgstr ""
+
+#: includes/theme-info/about.php:156
+msgid "Options to change the primary color of a site"
+msgstr ""
+
+#: includes/theme-info/about.php:162
+msgid "WooCommerce Options"
+msgstr ""
+
+#: includes/theme-info/about.php:163
+msgid "Options to manage your store using WooCommerce plugin"
+msgstr ""
+
+#: includes/theme-info/about.php:164
+msgid "Basic"
+msgstr ""
+
+#: includes/theme-info/about.php:165
+msgid "Advanced"
+msgstr ""
+
+#: includes/theme-info/about.php:169
+msgid "Sticky Footer"
+msgstr ""
+
+#: includes/theme-info/about.php:170
+msgid "Option to make footer sticky at bottom with parallax effect"
+msgstr ""
+
+#: includes/theme-info/about.php:176
+msgid "Hide or Override Footer Credit"
+msgstr ""
+
+#: includes/theme-info/about.php:177
+msgid "Option to enable/disable or override Powerby text in footer"
+msgstr ""
+
+#: includes/theme-info/about.php:183
+msgid "Support Forum"
+msgstr ""
+
+#: includes/theme-info/about.php:184
+msgid ""
+"Highly experienced and dedicated support team for your help plus online chat."
+msgstr ""
+
+#: includes/theme-info/about.php:186
+msgid "High Priority"
+msgstr ""
+
+#: includes/theme-info/class-about.php:164
+#, php-format
+msgid ""
+"Welcome! Thank you for choosing %1$s! To fully take advantage of the best our "
+"theme can offer please make sure you visit our %2$swelcome page%3$s."
+msgstr ""
+
+#: includes/theme-info/class-about.php:164
+#, php-format
+msgid "Get started with %s"
+msgstr ""
+
+#: includes/theme-info/class-about.php:554
+msgid "Install"
+msgstr ""
+
+#: includes/theme-info/class-about.php:558
+msgid "Activate"
+msgstr ""
+
+#: includes/theme-info/class-about.php:562
+msgid "Deactivate"
+msgstr ""
+
+#: includes/theme-info/class-about.php:596
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: includes/theme-info/class-about.php:710
+msgid "Free"
+msgstr ""
+
+#: includes/theme-info/class-about.php:711
+msgid "Pro"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:25
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching "
+"can help."
+msgstr ""
+
+#: template-parts/content-page.php:39
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: template-parts/content-page.php:44 template-parts/content.php:65
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-page.php:56
+#, php-format
+msgid "Edit %s"
+msgstr ""
+
+#: template-parts/content.php:54
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
