@@ -38,7 +38,7 @@ body {
   box-shadow: 0 4px 8px 0 rgba(0,0,255,0.7);
   padding: 10px;
   border-radius:20px;
-  height: 140px;
+  height: 50px;
   text-align: center;
   background-color: #f1f1f1;
 }
@@ -66,29 +66,34 @@ transform: scale(1.1);
 	 # establishing the connection with AWS RDS (MySQL) database
 	 $second_db = new wpdb(DB_USER, DB_PASSWORD, 'eldercareplus_db', DB_HOST);
 	 
-	 # query for fetching the records from databse based on suburb name.
+	 # query for fetching the records from database based on suburb name.
 
 	 $qry = "SELECT * FROM `tbl_health_problem` ORDER BY `problem` ASC "; 
 			
 	 $result = $second_db->get_results($qry);
 	 $i = 0;
+	 
 	 foreach ( $result as $row ){
+		 
 		 if ($i == 0){
-			echo '<div class="row" style="padding-top:15px;">';
+			echo '<div class="row" style="padding-top:25px;">';
 		 }
+		 		 
 		 $prob = $row->{"problem"};
 		 $slug = $row->{"slug"};
 		 
 		 echo '<a id="anc_id" href="https://eldercareplus.tk/health-safety-tips/'. $slug .'/">';
 		 echo '<div class="column grow">';
-		 echo ' <div class="card">';
-		 echo '   <h3 id="heading_id" style="color:black;">'. $prob .'</h3>';
-		 echo ' </div> </div> </a>';
-		 $i = $i+1;
-		 if ($i > 3) {
-		   $i=0;
-		   echo ' </div>';
+		 echo ' <div class="card" style="padding-top: 5px;">';
+		 echo '   <h5 id="heading_id" style="color:black; font-size:15px;">'. $prob .'</h5>';
+		 echo ' </div> </a>';
+		 echo ' </div>';
+		 $i=$i+1;
+		 if ($i > 3){
+			echo '</div>';
+			$i=0;
 		 }
+		 
 	 }
 
 ?>
